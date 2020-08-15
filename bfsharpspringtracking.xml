@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.5" method="upgrade" group="system">
+	<name>PLG_SYSTEM_BFSHARPSPRINGTRACKING</name>
+	<creationDate>August 2020</creationDate>
+	<version>1.0.0</version>
+	<author>Jonathan Brain</author>
+	<authorEmail>brainforge.uk@btinternet.com</authorEmail>
+	<authorUrl>https://www.brainforge.co.uk</authorUrl>
+	<copyright>Copyright (C) 2020 Jonathan Brain - All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PLG_SYSTEM_BFSHARPSPRINGTRACKING_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="bfsharpspringtracking">bfsharpspringtracking.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<config>
+		<fields
+				name="params"
+		>
+			<fieldset
+					name="basic">
+				<field
+						name="clientssscript"
+						type="text"
+						required="true"
+						label="PLG_SYSTEM_BFSHARPSPRINGTRACKING_CLIENTSSSCRIPT_LABEL"
+						description="PLG_SYSTEM_BFSHARPSPRINGTRACKING_CLIENTSSSCRIPT_DESC"
+						hint="koi-**********.marketingautomation.services/client/ss.js?ver=2.4.0"
+						class="input-xxlarge"
+				/>
+				<field
+						name="domain"
+						type="text"
+						required="true"
+						label="PLG_SYSTEM_BFSHARPSPRINGTRACKING_DOMAIN_LABEL"
+						description="PLG_SYSTEM_BFSHARPSPRINGTRACKING_DOMAIN_DESC"
+						hint="https:://**********.marketingautomation.services/net"
+						class="input-xxlarge"
+				/>
+				<field
+						name="account"
+						type="text"
+						required="true"
+						label="PLG_SYSTEM_BFSHARPSPRINGTRACKING_ACCOUNT_LABEL"
+						description="PLG_SYSTEM_BFSHARPSPRINGTRACKING_ACCOUNT_DESC"
+						hint="**********"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="PLG_SYSTEM_BFSHARPSPRINGTRACKING">
+			https://brainforge.co.uk/component/bfupdater?element=plg_system_bfsharpspringtracking.xml
+		</server>
+	</updateservers>
+</extension>
